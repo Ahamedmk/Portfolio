@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+footer{
+    margin:0 80px ;
+    padding: 30px 0px;
+}
+h1{
+    font-size: 32px;
+}
+h2{
+    text-align: center;
+    padding-top: 50px;
+}
+h3{
+    position: relative;
+    color: white;
+    padding: 30px 25px;
+    text-shadow: 0px 4px 9px rgba(31,13,8,0.83);
+
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#flex-header{
+    display: flex;
+    justify-content: space-between;
+}
+#mesCreations{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.container{
+    margin: 0 80px;
+    color: white;
+}
+header{
+    /* border: 1px solid red; */
+    padding: 5px 0px;
+    
+}
+hr{
+    border: 3px solid black;
+}
+/* nav{
+    display: flex;
+    gap: 5px;
+} */
+#flex-presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* border: 1px solid white; */
+    height: 100vh;
+    gap: 40px;
+    padding: 0 80px;
+}
+#droite-presentation{
+    width: 350px;
+}
+#bienvenue{
+    height: 100vh;
+    background-color: black;
+}
+#sendMail{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.image-projet{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+} 
+.image-projet:hover{
+ opacity: 0.7;
+}
+.contact{
+    text-align: center;
+}
+#renseignement{
+    margin-bottom: 10px;
+}
+#projet-grille{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 350px);
+    /* grid-template-rows: repeat(2, 120px) ; */
+    column-gap: 20px;
+    row-gap: 20px;
+    /* margin: 0 100px; */
+}
+
+ .image-projet:nth-of-type(1){
+    background-image: url(./images/jump-start.png);   
+}
+
+.image-projet:nth-of-type(2){
+    background-image: url(./images/rodeo-pump.jpg);
+}
+.image-projet:nth-of-type(3){
+    background-image: url(./images/pac-man.jpg);
+}
+.image-projet:nth-of-type(4){
+    background-image: url(./images/mega-pop.jpg);
+}
