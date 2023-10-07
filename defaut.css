@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700;900&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    /* font-weight: 100; */
 }
 footer{
     margin:0 80px ;
@@ -57,10 +59,9 @@ header{
 hr{
     border: 3px solid black;
 }
-/* nav{
-    display: flex;
-    gap: 5px;
-} */
+nav{
+    font-weight: 100;
+}
 #flex-presentation{
     display: flex;
     /* justify-content: center; */
@@ -109,6 +110,7 @@ hr{
     height: 150px;
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
 } 
 .image-projet:hover{
  opacity: 0.7;
@@ -144,8 +146,19 @@ hr{
     background-image: url(./images/mega-pop.jpg);
 }
 
-@media all and(max-width:730px){
+@media all and (max-width:730px){
     #droite-presentation{
         width: 250px;
+    }
+}
+@media all and (max-width:510px){
+    #flex-presentation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    #droite-presentation{
+        width: 200px;
     }
 }
