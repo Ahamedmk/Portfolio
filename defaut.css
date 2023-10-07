@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 footer{
     margin:0 80px ;
@@ -29,6 +30,9 @@ a{
     text-decoration: none;
     color: white;
 }
+a:hover{
+    font-weight: 700;
+}
 #flex-header{
     display: flex;
     justify-content: space-between;
@@ -47,6 +51,9 @@ header{
     padding: 5px 0px;
     
 }
+.mesCreations{
+    padding: 0 100px;
+}
 hr{
     border: 3px solid black;
 }
@@ -56,7 +63,18 @@ hr{
 } */
 #flex-presentation{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+    /* border: 1px solid white; */
+    height: 100vh;
+    gap: 40px;
+    padding: 0 80px;
+}
+
+#presentation{
+    display: flex;
+    /* justify-content: center; */
     align-items: center;
     color: white;
     /* border: 1px solid white; */
@@ -67,9 +85,16 @@ hr{
 #droite-presentation{
     width: 350px;
 }
+.gauche{
+    max-width: 500px;
+}
 #bienvenue{
     height: 100vh;
     background-color: black;
+}
+#jumpStart{
+    height: 100vh;
+    background: url('images/points.png'), center url('images/jump-start.png');
 }
 #sendMail{
     background-color: black;
@@ -87,6 +112,7 @@ hr{
 } 
 .image-projet:hover{
  opacity: 0.7;
+ cursor: pointer;
 }
 .contact{
     text-align: center;
